@@ -142,10 +142,10 @@ jQuery(document).ready(function ($) {
 
             Plotly.newPlot(dataArray[i] + "v" + dataArray[nextPos], chartData, chartLayout);
             
-            const correlation = new CorrelationCoefficient(xdata, ydata);
+            // const correlation = new CorrelationCoefficient(xdata, ydata);
 
-            const currentChart = $(".visualiser-charts-container #" + dataArray[i] + "v" + dataArray[nextPos])
-            $("<div class='correlation-coefficient'><p>Correlation Coefficient: " + correlation.getCorrelationCoefficient() + "</p></div>").appendTo(currentChart);
+            // const currentChart = $(".visualiser-charts-container #" + dataArray[i] + "v" + dataArray[nextPos])
+            // $("<div class='correlation-coefficient'><p>Correlation Coefficient: " + correlation.getCorrelationCoefficient() + "</p></div>").appendTo(currentChart);
         }
 
     }
